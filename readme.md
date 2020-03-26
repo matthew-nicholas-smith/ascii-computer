@@ -10,6 +10,7 @@ diode|carries a signal from one direction to the opposite side only, used as inp
 logic gates|gates that perform different functions, ie. `*, +, x, !, low, high`
 bus|a set of wires, individual wires are accessed through 0-9, a-f
 bus board|all busses, individual busses are accessed through A-Z
+floating|whether or not a piece can sit with no references (not actual terminology)
 
 
 Syntax:
