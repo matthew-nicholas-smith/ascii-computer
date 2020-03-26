@@ -16,9 +16,9 @@ floating|whether or not a piece can sit with no references (not actual terminolo
 Syntax:
 floating|command|ascii|definition
 -|-|-|-
-no|bus|║ ═ ╚ ╗ ╔ ╝ ╬|carries wire references
+no|bus|║ ═ ╠ ╩ ╦ ╣ ╚ ╗ ╔ ╝ ╬|carries wire references
 no|wire|│ ─ └ ┐ ┌ ┘ ┼|carries boolean references
-no|junction|■|connects crossing lines (┼ and ╬ are crossing wires)
+no|junction|■|connects crossing lines (┼ are crossing wires)
 no|reader|r|reads booleans to a wire from a logic gate (chooses direction of a logic gate)
 no|and|\*|returns 1 if all inputs are 1
 no|or|+|returns 0 if all inputs are 0 
@@ -36,10 +36,12 @@ Example program (4 bit incrementer):
 a
 ╠═════╦══════╦══════╦══════╗
 0     1      2      3      4
-│     ├─┐    ├─┐    ├─┐    │
-├───┬─┼─*r─┬─┼─*r─┬─┼─*r───x
-!   └─x    └─x    └─x      r
-r     r      r      r      │
+│     │      │      │      │
+│     ■─┐    ■─┐    ■─┐    │
+■───■─┼─*r─■─┼─*r─■─┼─*r───x
+│   └─x    └─x    └─x      r
+!     r      r      r      │
+r     │      │      │      │
 │     │      │      │      │
 0     1      2      3      4
 ╠═════╩══════╩══════╩══════╝
