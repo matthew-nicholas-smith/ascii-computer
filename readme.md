@@ -33,7 +33,7 @@ no|wire call|0-9, a-f|refers to a wire from the bus it connects to
 
 Example program (4 bit incrementer):
 ```
-a
+A
 ╠═════╦══════╦══════╦══════╗
 0     1      2      3      4
 │     │      │      │      │
@@ -44,7 +44,7 @@ r     r      r      r      │
 │     │      │      │      │
 0     1      2      3      4
 ╠═════╩══════╩══════╩══════╝
-b
+B
 ```
 
 Currently implemented:
