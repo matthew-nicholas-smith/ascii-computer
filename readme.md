@@ -4,11 +4,12 @@ This is an ascii-based computer architecture ide.
 
 Syntax:
 command|picture
----|---
+-|-
 bus|║ ═ ╠ ╩ ╦ ╣ ╚ ╗ ╔ ╝ ╬
 wire|│ ─ ├ ┴ ┬ ┤ └ ┐ ┌ ┘ ┼
 diode|^ v < >
-logic gates|
+logic gates|* + x !
+
 ```
 a
 ╠══╦═════╦═════╦═════╗
