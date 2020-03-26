@@ -19,13 +19,15 @@ floating|command|ascii|definition
 no|bus|║ ═ ╠ ╩ ╦ ╣ ╚ ╗ ╔ ╝ ╬|carries wire references
 no|wire|│ ─ ├ ┴ ┬ ┤ └ ┐ ┌ ┘ ┼|carries boolean references
 no|junction|■|connects crossing lines (┼ and ╬ are crossing wires)
-no|output|^ v < >|reads booleans to a wire from a logic gate (chooses direction of a logic gate)
+no|reader|r|reads booleans to a wire from a logic gate (chooses direction of a logic gate)
 no|and|\*|returns 1 if all inputs are 1
 no|or|+|returns 0 if all inputs are 0 
 no|xor|x|returns 1 if an odd number of inputs is 1
 no|nor|!|returns 1 if all inputs are 0 
 yes|high|h|returns 1
 yes|low|l|returns 0
+yes|input|i|switch, shows and returns value, changed when clicked
+no|output|0|shows the value of the wire connected to it
 yes|bus call|A-Z|refers to a bus from the busboard
 no|wire call|0-9, a-f|refers to a wire from the bus it connects to
 
@@ -35,9 +37,10 @@ a
 ╠═════╦══════╦══════╦══════╗
 0     1      2      3      4
 │     ├─┐    ├─┐    ├─┐    │
-├───┬─┼─*>─┬─┼─*>─┬─┼─*>───x
-!   └─x    └─x    └─x      v
-v     v      v      v      │
+├───┬─┼─*r─┬─┼─*r─┬─┼─*r───x
+!   └─x    └─x    └─x      r
+r     r      r      r      │
+│     │      │      │      │
 0     1      2      3      4
 ╠═════╩══════╩══════╩══════╝
 b
@@ -48,9 +51,18 @@ Currently implemented:
     - [ ] checklist
     - [ ] syntax
     - [x] example program
+    - [ ] data structure
+    - [ ] determining compile order
+    - [ ] determining run order
 - [ ] writing
     - [ ] adding wires
     - [ ] adding busses
     - [ ] alphanumeric typing
     - [ ] 
+- [ ] compiling
+    - [ ] generating hashes based on readers
+    - [ ] expanding/merging hashes using wires
+    - [ ] making a list of all gates with which hashes control them
+    
 - [ ] running
+    - [ ] 
