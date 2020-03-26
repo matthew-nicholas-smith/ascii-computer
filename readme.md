@@ -37,6 +37,6 @@ v     v      v      v      │
 b
 ```
 Currently implemented:
-*-[ ]control 
-  *-[]wires
-*-[ ]running
+-[]control 
+-[]wires
+-[]running
