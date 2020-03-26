@@ -16,8 +16,8 @@ floating|whether or not a piece can sit with no references (not actual terminolo
 Syntax:
 floating|command|ascii|definition
 -|-|-|-
-no|bus|║ ═ ╠ ╩ ╦ ╣ ╚ ╗ ╔ ╝ ╬|carries wire references
-no|wire|│ ─ ├ ┴ ┬ ┤ └ ┐ ┌ ┘ ┼|carries boolean references
+no|bus|║ ═ ╚ ╗ ╔ ╝ ╬|carries wire references
+no|wire|│ ─ └ ┐ ┌ ┘ ┼|carries boolean references
 no|junction|■|connects crossing lines (┼ and ╬ are crossing wires)
 no|reader|r|reads booleans to a wire from a logic gate (chooses direction of a logic gate)
 no|and|\*|returns 1 if all inputs are 1
