@@ -38,5 +38,5 @@ b
 ```
 Currently implemented:
 
-- [ ] An uncompleted task
+-[ ] An uncompleted task
     - [ ] A subtask
