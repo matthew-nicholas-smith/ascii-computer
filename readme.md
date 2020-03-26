@@ -7,22 +7,26 @@ term|definition
 -|-
 wire|carries a signal in any direction it connects to, used as output for logic gates
 diode|carries a signal from one direction to the opposite side only, used as input for logic gates
-logic gates|gates that perform different functions, ie. `*+x!`
-bus|a set of wires, individual wires are accessed through 0-f
-bus board|a global variable containing all busses, accessed through g-z
+logic gates|gates that perform different functions, ie. `*, +, x, !, low, high`
+bus|a set of wires, individual wires are accessed through 0-9, a-f
+bus board|all busses, individual busses are accessed through A-Z
+
 
 Syntax:
-command|ascii|definition
--|-|-
-bus|║ ═ ╠ ╩ ╦ ╣ ╚ ╗ ╔ ╝ ╬|carries wire references
-wire|│ ─ ├ ┴ ┬ ┤ └ ┐ ┌ ┘ ┼|carries boolean references
-junction|■|connects crossing lines (┼ and ╬ are crossing wires)
-output|^ v < >|reads booleans to a wire from a logic gate (chooses direction of a logic gate)
-and|\*|returns 1 if all inputs are 1
-or|+|returns 0 if all inputs are 0 
-xor|x|returns 1 if an odd number of inputs is 1
-nor|!|returns 1 if all inputs are 0
-bus call|a-z, A-Z|refers to a bus from the busboard 
+floating|command|ascii|definition
+-|-|-|-
+no|bus|║ ═ ╠ ╩ ╦ ╣ ╚ ╗ ╔ ╝ ╬|carries wire references
+no|wire|│ ─ ├ ┴ ┬ ┤ └ ┐ ┌ ┘ ┼|carries boolean references
+no|junction|■|connects crossing lines (┼ and ╬ are crossing wires)
+no|output|^ v < >|reads booleans to a wire from a logic gate (chooses direction of a logic gate)
+no|and|\*|returns 1 if all inputs are 1
+no|or|+|returns 0 if all inputs are 0 
+no|xor|x|returns 1 if an odd number of inputs is 1
+no|nor|!|returns 1 if all inputs are 0 
+yes|high|h|returns 1
+yes|low|l|returns 0
+yes|bus call|A-Z|refers to a bus from the busboard
+no|wire call|0-9, a-f|refers to a wire from the bus it connects to
 
 ```
 a
@@ -37,6 +41,13 @@ v     v      v      v      │
 b
 ```
 Currently implemented:
-
--[ ] An uncompleted task
-    - [ ] A subtask
+- [ ] planning
+    - [x] creating repository
+    - [ ] checklist
+    - [ ] syntax
+- [ ] writing
+    - [ ] adding wires
+    - [ ] adding busses
+    - [ ] alphanumeric typing
+    - [ ] 
+- [ ] running
