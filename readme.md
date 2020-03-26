@@ -7,10 +7,10 @@ command|picture
 -|-
 bus|║ ═ ╠ ╩ ╦ ╣ ╚ ╗ ╔ ╝ ╬
 wire|│ ─ ├ ┴ ┬ ┤ └ ┐ ┌ ┘ ┼
-disconnect|# (to differ between connected wires and crossing wires)
+junction|■ (┼ and ╬ are crossing wires)
 diode|^ v < >
 logic gates|* + x !
-
+|
 ```
 a
 ╠═══╦════╦════╦════╗
