@@ -28,6 +28,7 @@ yes|low|l|returns 0
 yes|bus call|A-Z|refers to a bus from the busboard
 no|wire call|0-9, a-f|refers to a wire from the bus it connects to
 
+Example program (4 bit incrementer):
 ```
 a
 ╠═════╦══════╦══════╦══════╗
@@ -45,6 +46,7 @@ Currently implemented:
     - [x] creating repository
     - [ ] checklist
     - [ ] syntax
+    - [x] example program
 - [ ] writing
     - [ ] adding wires
     - [ ] adding busses
