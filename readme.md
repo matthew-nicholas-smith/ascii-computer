@@ -10,7 +10,7 @@ diode      |carries a signal from one direction to the opposite side only, used 
 logic gates|gates that perform different functions, ie. `*, +, x, !, low, high`
 bus        |a set of wires, individual wires are accessed through 0-9, a-f
 bus board  |all busses, individual busses are accessed through A-Z
-floating   |whether or not a piece can sit with no references (not actual terminology)
+floating   |whether or not a piece can sit with no references (not actual terminology; specific to this language)
 
 
 Syntax:
@@ -32,7 +32,7 @@ yes     |bus call |A-Z                  |refers to a bus from the busboard
 no      |wire call|0-9, a-f             |refers to a wire from the bus it connects to
 
 
-Note: lowercase letters after "f" are reserved for keywords.
+Note: lowercase letters after "f" are reserved for keywords. (new keywords will be added with maintenance)
 letter|keyword|letter|keyword
 ------|-------|------|-------
 g     |none   |q     |none
